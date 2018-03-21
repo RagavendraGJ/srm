@@ -83,6 +83,12 @@ website_context = {
 # ---------------
 # Hook on document methods and events
 
+doc_events = {
+    "Student": {
+        "validate": "srm.api.check_marks"
+    }
+}
+
 # doc_events = {
 # 	"*": {
 # 		"on_update": "method",
